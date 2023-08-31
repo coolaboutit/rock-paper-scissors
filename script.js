@@ -43,11 +43,15 @@ function playRound(playerSelection, computerSelection) {
 
 function game() {
     let playerSelection = "";
-    for (let i = 0; i < 5; i++) {
+    
+    while (playerScore < 5 && computerScore < 5) {
         playerSelection = prompt("Choose your weapon");
         console.log(playRound(playerSelection, getComputerChoice()));
         console.log(`playerScore: ${playerScore} computerScore: ${computerScore}`);
     }
+    console.clear();
+    console.log("Game end!");
+    console.log(`playerScore: ${playerScore} computerScore: ${computerScore}`);
 }
 
 game();
