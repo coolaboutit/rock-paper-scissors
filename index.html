@@ -5,9 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" />
 </head>
 
 <body>
+
+    <h1>Rock Paper Scissors</h1>
+    <h2 id="announcer">Choose your weapon<br />First to five wins!</h2>
+    <div class="pvs-section">
+        <div class="choices-section">
+            <div class="name-text">You</div>
+            <div id="player-score">0</div>
+            <div class="choices-icons">
+                <button id="player-rock" class="choice player-choice">✊</button>
+                <button id="player-paper" class="choice player-choice">✋</button>
+                <button id="player-scissors" class="choice player-choice">✌️</button>
+            </div>
+        </div>
+        <div class="versus-text">VERSUS</div>
+        <div class="choices-section">
+            <div class="name-text">Computer</div>
+            <div id="computer-score">0</div>
+            <div class="choices-icons">
+                <button id="computer-rock" class="choice" disabled>✊</button>
+                <button id="computer-paper" class="choice" disabled>✋</button>
+                <button id="computer-scissors" class="choice" disabled>✌️</button>
+            </div>
+        </div>
+    </div>
+    <div id="result">
+    </div>
+    <button id="restart">New Game</button>
     <script src="script.js"></script>
 </body>
 
